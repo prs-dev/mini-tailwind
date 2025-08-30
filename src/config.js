@@ -2,7 +2,8 @@ export const config = {
     bg: {
         blue: "#27BEF5",
         red: "#D42217",
-        gray: "#C2C2C2"
+        gray: "#C2C2C2",
+        green: "green"
     },
     p: {
          1: "10px",
