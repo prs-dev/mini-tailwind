@@ -3,22 +3,30 @@ import useWindowSize from './hooks/useWindowSize'
 //parser function
 
 const helper = (key, obj, value) => {
-    switch (key) {
-        case 'bg':
-            obj.backgroundColor = value
-            break
-        case 'p':
-            obj.padding = value
-            break
-        case 'rounded':
-            obj.borderRadius = value
-            break
-        case 'm':
-            obj.margin = value
-            break
-        case 'text':
-            obj.fontSize = value
+    // switch (key) {
+    //     case 'bg':
+    //         obj.backgroundColor = value
+    //         break
+    //     case 'p':
+    //         obj.padding = value
+    //         break
+    //     case 'rounded':
+    //         obj.borderRadius = value
+    //         break
+    //     case 'm':
+    //         obj.margin = value
+    //         break
+    //     case 'text':
+    //         obj.fontSize = value
+    // }
+    const map = {
+        bg: "backgroundColor",
+        p: "padding",
+        rounded: "borderRadius",
+        m: "margin",
+        text: "fontSize"
     }
+    obj[map[key]] = value
 }
 export const tw = classString => {
     const baseStyle = {}
