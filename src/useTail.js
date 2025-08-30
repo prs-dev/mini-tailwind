@@ -4,9 +4,8 @@ import { tw } from "./tail"
 export const useTail = (classString) => {
     const {baseStyle, hoverStyle} = tw(classString)
     const [isHover, setIsHover] = useState(false)
-    let style = {}
+    let style = baseStyle
     if(hoverStyle && isHover) {
-        // console.log("i am here", style)
         style = {...baseStyle, ...hoverStyle}
     }
     console.log("style", style)

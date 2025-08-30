@@ -4,15 +4,15 @@ export const config = {
         red: "#D42217",
         gray: "#C2C2C2"
     },
-    padding: {
-         sm: "10px",
-         md: "30px",
-         lg: "50px"
+    p: {
+         1: "10px",
+         2: "30px",
+         4: "50px"
     },
     rounded: {
-        sm: "10%",
-        md: "20%",
-        half: "50%",
-        full: "100%"
+        sm: "10px",
+        md: "20px",
+        half: "100px",
+        full: "9999px"
     }
 }

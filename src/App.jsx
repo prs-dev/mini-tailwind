@@ -3,7 +3,7 @@
 import { useTail } from "./useTail"
 
 const App = () => {
-  const {style, eventHandlers} = useTail("bg-gray p-sm rounded-md hover:bg-blue hover:padding-sm hover:rounded-half")
+  const {style, eventHandlers} = useTail("bg-gray p-1 rounded-sm hover:bg-blue hover:p-1 hover:rounded-half")
   // const {style, eventHandlers} = useTw("bg-red hover:bg-blue")
   console.log(style)
   return (

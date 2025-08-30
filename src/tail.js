@@ -10,6 +10,7 @@ export const tw = classString => {
             const main = cls.slice(6)
             const [key, prop] = main.split('-')
             if(key === 'bg') hoverStyle.backgroundColor = config[key][prop]
+            if(key === 'p') hoverStyle.padding = config[key][prop]
             else hoverStyle[key] = config[key][prop]
             console.log("main", main, hoverStyle)
         }
@@ -17,7 +18,7 @@ export const tw = classString => {
             baseStyle.backgroundColor = config[actual][target]
         }
         if(cls.startsWith('p-')) {
-            baseStyle.padding = config['padding'][target]
+            baseStyle.padding = config['p'][target]
         }
         if(cls.startsWith('rounded-')) {
             baseStyle.borderRadius = config['rounded'][target]
